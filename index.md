@@ -4,11 +4,11 @@ title: Neo's Fun - legal hackers team
 
 # `Neo's Fun` - legal hackers team
 
-{% include_relative rating.md members=site.data.members %}
+{% include rating.md members=site.data.members %}
 
-{% include_relative upcoming.md %}
+{% include upcoming.md %}
 
-{% include_relative links.md %}
+{% include links.md %}
 
-{% include_relative credentials.md %}
+{% include credentials.md %}
 
