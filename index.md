@@ -12,3 +12,5 @@ title: Neo's Fun - legal hackers team
 
 {% include credentials.md %}
 
+{% include usefully.md %}
+
