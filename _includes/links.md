@@ -7,4 +7,14 @@
 - [ITSecWiki](http://itsecwiki.org)
 - [Hydra tutorial part 1](https://codeby.net/thc-hydra-ochen-bystryj-vzlomshhik-setevogo-vhoda-v-sistemu-chast-pervaja/)
 - [Hydra tutorial part 2](https://codeby.net/brutforsing-veb-sajtov-s-hydra-chast-vtoraja-instrukcii-po-hydra/)
-
+- http://ringzer0team.com/
+- http://root-me.org
+- http://canyouhack.it/
+- http://www.hackthis.co.uk
+- http://captf.com/practice-ctf/
+- https://ctf365.com/
+- http://smashthestack.org
+- http://overthewire.org/wargames/
+- https://microcorruption.com/login
+- https://exploit-exercises.com/
+- http://freehackquest.com/
