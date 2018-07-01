@@ -1,3 +1,3 @@
 ## Upcoming events
 
-- Session
+- Summer
