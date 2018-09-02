@@ -1,0 +1,271 @@
+<html lang="ru">
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-family: sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }
+      th, td {
+        border: 1px solid #dddddd;
+        font-size: 14px;
+        padding: 5px;
+      }
+      span {
+        display: block;
+        font-size: 12px;        
+      }
+      th, td, span {
+        line-height: 1.428571429;
+        color: #9a9a9a;
+        text-align: center;
+      }
+      .time {
+        padding: 10px;
+        vertical-align: middle;
+        width: 75px;
+      }
+      caption {
+        margin-bottom: 10px;
+        font-size: larger;
+      }
+      .red {
+        background: #ff000060;
+      }
+      .maybe_red {
+        background: #ff000025;
+      }
+      .blue {
+        background: #0000ff60;
+      }
+      .maybe_blue {
+        background: #0000ff25;
+      }
+      .green {
+        background: #00ff0060;
+      }
+      .maybe_green {
+        background: #00ff0025;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <caption> Нечётная </caption>
+      <tr>
+        <th></th>
+        <th>пн</th>
+        <th>вт</th>
+        <th>ср</th>
+        <th>чт</th>
+        <th>пт</th>
+        <th>сб</th>
+        <th>вс</th>
+      </tr>
+      <tr>
+        <td class="time">
+          <span>08:50</span>
+          <span>10:25</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="maybe_red"></td>
+      </tr>
+      <tr>
+        <td class="time">
+          <span>10:40</span>
+          <span>12:15</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="maybe_red"></td>
+      </tr>
+      <tr>
+        <td class="time">
+          <span>13:15</span>
+          <span>14:50</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="maybe_green"></td>
+        <td class="blue"></td>
+        <td class="maybe_red"></td>
+      </tr>
+      <tr>
+        <td class="time">
+          <span>15:00</span>
+          <span>16:35</span>
+        </td>
+        <td class="maybe_green"></td>
+        <td></td>
+        <td></td>
+        <td class="green"></td>
+        <td class="maybe_green"></td>
+        <td class="blue"></td>
+        <td class="maybe_red"></td>
+      </tr>
+      <tr>
+        <td class="time">
+          <span>16:45</span>
+          <span>18:20</span>
+        </td>
+        <td class="maybe_green"></td>
+        <td></td>
+        <td></td>
+        <td class="green"></td>
+        <td class="green"></td>
+        <td class="blue"></td>
+        <td class="red"></td>
+      </tr>
+      <tr>
+        <td class="time">
+          <span>18:30</span>
+          <span>20:05</span>
+        </td>
+        <td class="maybe_green"></td>
+        <td class="green"></td>
+        <td></td>
+        <td class="maybe_green"></td>
+        <td class="green"></td>
+        <td class="blue"></td>
+        <td class="red"></td>
+      </tr>
+      <tr>
+        <td class="time">
+          <span>20:15</span>
+          <span>21:50</span>
+        </td>
+        <td class="maybe_green"></td>
+        <td class="green"></td>
+        <td></td>
+        <td class="maybe_green"></td>
+        <td class="green"></td>
+        <td class="blue"></td>
+        <td class="red"></td>
+      </tr>
+    </table>
+
+    <table>
+        <caption> Чётная </caption>
+        <tr>
+          <th></th>
+          <th>пн</th>
+          <th>вт</th>
+          <th>ср</th>
+          <th>чт</th>
+          <th>пт</th>
+          <th>сб</th>
+          <th>вс</th>
+        </tr>
+        <tr>
+          <td class="time">
+            <span>08:50</span>
+            <span>10:25</span>
+          </td>
+          <td class="maybe_green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="maybe_red"></td>
+        </tr>
+        <tr>
+          <td class="time">
+            <span>10:40</span>
+            <span>12:15</span>
+          </td>
+          <td class="maybe_green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="maybe_red"></td>
+        </tr>
+        <tr>
+          <td class="time">
+            <span>13:15</span>
+            <span>14:50</span>
+          </td>
+          <td class="maybe_green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="blue"></td>
+          <td class="maybe_red"></td>
+        </tr>
+        <tr>
+          <td class="time">
+            <span>15:00</span>
+            <span>16:35</span>
+          </td>
+          <td class="maybe_green"></td>
+          <td></td>
+          <td class="maybe_green"></td>
+          <td></td>
+          <td class="maybe_green"></td>
+          <td class="blue"></td>
+          <td class="maybe_red"></td>
+        </tr>
+        <tr>
+          <td class="time">
+            <span>16:45</span>
+            <span>18:20</span>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="green"></td>
+          <td></td>
+          <td class="maybe_green"></td>
+          <td class="blue"></td>
+          <td class="maybe_red"></td>
+        </tr>
+        <tr>
+          <td class="time">
+            <span>18:30</span>
+            <span>20:05</span>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="green"></td>
+          <td></td>
+          <td class="maybe_green"></td>
+          <td class="blue"></td>
+          <td class="red"></td>
+        </tr>
+        <tr>
+          <td class="time">
+            <span>20:15</span>
+            <span>21:50</span>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="green"></td>
+          <td></td>
+          <td class="maybe_green"></td>
+          <td class="blue"></td>
+          <td class="red"></td>
+        </tr>
+      </table>
+  </body>
+</html>
