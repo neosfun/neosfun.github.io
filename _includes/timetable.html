@@ -1,6 +1,6 @@
 <html lang="ru">
-
 <head>
+  <!-- <meta name="viewport" content="width=1920, initial-scale=1.0"> -->
   <style>
     * {
       box-sizing: border-box;
@@ -13,8 +13,7 @@
     table {
       border-collapse: collapse;
       border-spacing: 0;
-      margin-bottom: 20px;
-      margin-top: 100px;
+      margin-bottom: 50px;
     }
 
     th,
@@ -51,45 +50,60 @@
       font-size: larger;
     }
 
-    .red {
-      background: #ff000060;
+    #date_block {
+      min-width: 640px;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    #date {
+      margin-left: auto;
+      margin-top: 20px;
+      text-align: left;
+      float: right;
+    }
+    .clearfix {
+      content: "";
+      display: table;
+      clear: both;
     }
 
+    .red {
+      background: #711111;
+      background: #ff000060;
+    }
+    
     .maybe_red {
+      background: #3C1717;
       background: #ff000025;
     }
 
     .blue {
+      background: #101070;
       background: #0000ff60;
     }
 
     .maybe_blue {
+      background: #17173B;
       background: #0000ff25;
     }
 
     .green {
+      background: #107010;
       background: #00ff0060;
     }
 
     .maybe_green {
+      background: #173C17;
       background: #00ff0025;
-    }
-    #date {
-      margin-top: 40px;
-      text-align: left;
-      float: right;
-    }
-    .clearfix::after {
-      content: "";
-      display: table;
-      clear: both;
     }
   </style>
 </head>
 
 <body>
-  <div id="date"></div>
-  <div class="clearfix"></div>
+  <div id="date_block">
+    <div id="date"></div>
+    <div class="clearfix"></div>
+  </div>
 
   <table>
     <caption> Нечётная </caption>
