@@ -315,13 +315,31 @@
     </tr>
   </table>
   <script>
-    Date.prototype.getWeek = function () {
-      var onejan = new Date(this.getFullYear(), 0, 1);
-      return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);
+/* 
+    function getWeekNumber(d) {
+    
+} */
+
+//var result = getWeekNumber(new Date());
+//document.write('It\'s currently week ' + result[1] + ' of ' + result[0]);
+
+    function getWeekNumber(d) {
+      // Copy date so don't modify original
+      d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+      // Set to nearest Thursday: current date + 4 - current day number
+      // Make Sunday's day number 7
+      d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7));
+      // Get first day of year
+      var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+      // Calculate full weeks to nearest Thursday
+      var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
+      // Return array of year and week number
+      return weekNo;
     }
 
+
     var dt = new Date();
-    document.getElementById("date").innerHTML = (dt.getWeek() & 1 ? "Нечётная: <br>" : "Чётная: <br>") 
+    document.getElementById("date").innerHTML = (getWeekNumber(dt) & 1 ? "Нечётная: <br>" : "Чётная: <br>") 
                                                   + dt.toLocaleDateString('ru', {
                                                       year: 'numeric',
                                                       month: 'long',
