@@ -6,11 +6,6 @@ title: Neo's Fun - legal hackers team
 
 {% include rating.md members=site.data.members %}
 
-{% include upcoming.md %}
-
-{% include links.md %}
+- [Наши writeups](writeup)
 
 {% include credentials.md %}
-
-{% include usefully.md %}
-
