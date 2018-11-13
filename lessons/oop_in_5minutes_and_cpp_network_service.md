@@ -119,6 +119,8 @@ title: Neo's Fun - ООП за 5 минут и сетевой сервис на 
 3. Общей буффер для все подключений простое игровое поле
 4. И много разных комманд для управления игровым полем
 
+[Source Code](/files/oop_in_5minutes_and_cpp_network_service.zip)
+
 ### Для начала опишем класс игрового поля (`neos_fun_game.h`):
 ```
 class NeosFunGame {
@@ -307,10 +309,12 @@ std::string GameHandler::handle(std::vector<std::string> &vArgs) {
 
 ### Архив с исходниками
 
+[Source Code](/files/oop_in_5minutes_and_cpp_network_service.zip)
+
 * Для сборки вам потребуется g++
 * Внутри проекта есть `build.sh` скрипт для сборки (А такие штуки как Makefile, CMakeLists.txt - в другой раз)
 
-Для гуру сборщиков из командной строки:
+Для гуру сборщиков из командной строки продублирую команду для сборки:
 
 ```
 g++ -std=c++0x \
