@@ -121,6 +121,10 @@ title: Neo's Fun - ООП за 5 минут и сетевой сервис на 
 
 [Source Code](/files/oop_in_5minutes_and_cpp_network_service.zip)
 
+Или
+
+[https://github.com/neosfun/neos_fun_game_service](https://github.com/neosfun/neos_fun_game_service)
+
 ### Для начала опишем класс игрового поля (`neos_fun_game.h`):
 ```
 class NeosFunGame {
@@ -311,6 +315,10 @@ std::string GameHandler::handle(std::vector<std::string> &vArgs) {
 
 [Source Code](/files/oop_in_5minutes_and_cpp_network_service.zip)
 
+Или
+
+[https://github.com/neosfun/neos_fun_game_service](https://github.com/neosfun/neos_fun_game_service)
+
 * Для сборки вам потребуется g++
 * Внутри проекта есть `build.sh` скрипт для сборки (А такие штуки как Makefile, CMakeLists.txt - в другой раз)
 
@@ -330,6 +338,11 @@ g++ -std=c++0x \
     -o neos_fun_game_service # ouput file
 ```
 
+Нуу и подключаемся через с помощью `nc`:
+
+```
+$ nc localhost 3333
+```
 
 ### Заключение
 
@@ -346,6 +359,8 @@ g++ -std=c++0x \
 *По поводу остальных плюшек - это уже другая история*
 
 ### Индивидуальные задания 
+
+Все исходники здесь [https://github.com/neosfun/neos_fun_game_service](https://github.com/neosfun/neos_fun_game_service)
 
 * Добавить конмаду `clean` - зануление поля
 * Добавить команду `text` - вывод текста (а не только один символ)
