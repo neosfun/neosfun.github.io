@@ -1,6 +1,12 @@
+# jekyll
 _site/
 .sass-cache/
 .jekyll-metadata
-*.swp
 Gemfile*
+
+# vim
+*.swp
+
+# vs code
 .vscode/*
+*.code-workspace
